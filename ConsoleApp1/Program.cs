@@ -1,4 +1,7 @@
-﻿namespace indexer
+﻿using System;
+using ConsoleApp1;
+
+namespace indexer
 {
 	public class Person
 	{
@@ -78,6 +81,22 @@
 
 			oFactory.Persons[0].ShowInfo();
 			oFactory[0].ShowInfo();
+
+			Supervisor.GetInstance().Age = 20;
+			Supervisor.GetInstance().Name="Hamed Banaei";
+			Supervisor.GetInstance().ShowInfo();
+
+            Console.WriteLine("\r\n");
+
+            Supervisor.Instance.AccessList = new string[1];
+			Supervisor.Instance.AccessList[0] = "Register New Member";
+			Supervisor.Instance.ShowInfo();
+
+			Console.WriteLine("\r\n");
+
+			Supervisor.Instance.Name = "Ms. Beigi";
+			Supervisor.Instance.ShowInfo();
+
 
 			System.Console.ReadLine();
 		}
