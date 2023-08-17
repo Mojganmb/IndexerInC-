@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace indexer
+﻿namespace indexer
 {
 	public class Person
 	{
@@ -31,7 +25,7 @@ namespace indexer
 		public int _index;
 		public Person[] Persons;
 
-		public Person this[int index] // Indexer!
+		public Person this[int index]
 		{
 			get
 			{
